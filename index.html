@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AXT Labs | Engineering the Next Wave of Scientific Discovery</title>
-  <meta name="description" content="AXT Labs launches January 1, 2026. Engineering the next wave of scientific discovery with advanced research and technology.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="AXT Labs launches January 1, 2026. Engineering the next wave of scientific discovery with advanced research and technology." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
   <style>
     :root {
       color-scheme: light dark;
@@ -47,7 +49,7 @@
     a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .wrap { max-width: 1100px; margin: 0 auto; padding: 24px 20px 64px; }
-    
+
     /* Header */
     .header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 0 40px; }
     .brand { display: flex; align-items: center; gap: 12px; }
@@ -57,44 +59,54 @@
     .social-links { display: flex; gap: 12px; }
     .social-btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); color: var(--text); background: rgba(255,255,255,.03); transition: transform 0.2s; }
     .social-btn:hover { transform: translateY(-1px); }
-    
+
     /* Hero Banner */
     .hero-banner { text-align: center; padding: 80px 0 60px; }
     .hero-banner h1 { font-size: clamp(48px, 8vw, 80px); font-weight: 300; margin: 0 0 20px; letter-spacing: -2px; background: linear-gradient(135deg, var(--text), var(--muted)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .tagline { font-size: clamp(20px, 3vw, 28px); color: var(--muted); margin: 0 0 60px; font-weight: 400; }
-    
+
     /* Wave Animation */
     .wave-container { position: relative; height: 200px; overflow: hidden; border-radius: 20px; background: linear-gradient(135deg, rgba(122,162,255,.1), rgba(96,224,178,.1)); margin: 40px 0; }
     .wave { position: absolute; top: 50%; left: 50%; width: 800px; height: 800px; margin-left: -400px; margin-top: -400px; border-radius: 50%; background: radial-gradient(circle, rgba(122,162,255,.3), transparent 70%); animation: wave 8s linear infinite; }
     .wave:nth-child(2) { animation-delay: -2s; background: radial-gradient(circle, rgba(96,224,178,.2), transparent 70%); }
     .wave:nth-child(3) { animation-delay: -4s; background: radial-gradient(circle, rgba(122,162,255,.1), transparent 70%); }
     @keyframes wave { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-    
+
     /* Countdown */
     .countdown { text-align: center; padding: 60px 0; }
     .countdown h2 { font-size: clamp(32px, 5vw, 48px); margin: 0 0 20px; font-weight: 500; }
     .countdown-text { font-size: clamp(18px, 2.5vw, 24px); color: var(--brand); font-weight: 600; }
-    
+
     /* Vision Section */
     .vision { text-align: center; padding: 60px 40px; background: var(--panel); border-radius: 20px; border: 1px solid var(--border); margin: 60px 0; box-shadow: var(--shadow); }
     .vision h2 { font-size: clamp(28px, 4vw, 36px); margin: 0 0 30px; font-weight: 500; }
     .vision p { font-size: clamp(18px, 2.5vw, 22px); color: var(--muted); margin: 0; max-width: 800px; margin: 0 auto; }
-    
+
+    /* Mission & Values */
+    .mv { text-align: center; padding: 60px 40px; margin: 60px 0; background: rgba(255,255,255,.03); border-radius: 20px; border: 1px dashed var(--border); box-shadow: var(--shadow); }
+    .mv h2 { font-size: clamp(28px, 4vw, 36px); margin: 0 0 20px; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; }
+    .mv .icon { font-size: 28px; }
+    .mv p { color: var(--muted); max-width: 850px; margin: 0 auto 24px; }
+    .mv .values { display: inline-block; text-align: left; margin: 0 auto 24px; }
+    .mv .values li { margin: 8px 0; }
+    blockquote.founder { max-width: 800px; margin: 24px auto 0; padding: 20px 24px; border-left: 4px solid var(--accent); background: rgba(96,224,178,.08); border-radius: 12px; box-shadow: var(--shadow); font-style: italic; }
+    .founder cite { display: block; margin-top: 10px; font-style: normal; color: var(--muted); }
+
     /* About */
     .about { text-align: center; padding: 60px 0; }
     .about h2 { font-size: clamp(24px, 3vw, 32px); margin: 0 0 20px; font-weight: 500; }
     .about p { color: var(--muted); font-size: 16px; max-width: 600px; margin: 0 auto 30px; }
-    
+
     /* Footer */
     .footer { text-align: center; padding: 60px 0 40px; border-top: 1px solid var(--border); margin-top: 60px; }
     .footer p { font-size: clamp(16px, 2vw, 20px); color: var(--muted); margin: 0; font-weight: 300; }
-    
+
     /* Responsive */
     @media (max-width: 768px) {
       .header { flex-direction: column; gap: 20px; }
       .social-links { order: -1; }
       .hero-banner { padding: 60px 0 40px; }
-      .countdown, .vision, .about { padding: 40px 20px; }
+      .countdown, .vision, .about, .mv { padding: 40px 20px; }
     }
   </style>
 </head>
@@ -106,56 +118,78 @@
         <h1>AXT Labs</h1>
       </div>
       <div class="social-links">
-        <a href="https://github.com/codyterry24-dev" class="social-btn" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/in/codyterry24" class="social-btn" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="social-btn" href="https://github.com/codyterry24-dev" target="_blank" rel="noopener">GitHub</a>
+        <a class="social-btn" href="https://linkedin.com/in/codyterry24" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </header>
-    
+
     <section class="hero-banner">
       <h1>AXT Labs<br/>Launching January 1, 2026</h1>
       <p class="tagline">Engineering the Next Wave of Scientific Discovery</p>
     </section>
-    
-    <div class="wave-container">
+
+    <div class="wave-container" aria-hidden="true">
       <div class="wave"></div>
       <div class="wave"></div>
       <div class="wave"></div>
     </div>
-    
+
     <section class="countdown">
       <h2>Countdown to Launch</h2>
       <p class="countdown-text">100 days to go, prepping the future</p>
     </section>
-    
+
     <section class="vision">
       <h2>Our Vision</h2>
       <p>We empower science, technology, and imagination with the tools of tomorrow.</p>
     </section>
-    
+
+    <section class="mv" id="mission-values">
+      <h2><span class="icon" aria-hidden="true">🎯</span> Mission & Values</h2>
+      <p><strong>Mission:</strong> Engineering the next wave of scientific discovery by fusing rigorous research with elegant, human-centered technology—so scientists, engineers, and creators can move from idea to impact faster.</p>
+
+      <h3 style="margin:16px 0 8px; font-weight:600; display:inline-flex; align-items:center; gap:8px;">
+        <span class="icon" aria-hidden="true">✨</span> Core Values
+      </h3>
+      <ul class="values">
+        <li><strong>Integrity First:</strong> Science demands honesty, transparency, and reproducibility.</li>
+        <li><strong>Human-Centered Design:</strong> Tools should feel intuitive, empowering, and delightful.</li>
+        <li><strong>Relentless Curiosity:</strong> We learn boldly, test rigorously, and iterate quickly.</li>
+        <li><strong>Open Collaboration:</strong> Innovation accelerates when knowledge is shared.</li>
+        <li><strong>Impact Over Hype:</strong> Results matter—measurable improvements beat buzzwords.</li>
+      </ul>
+
+      <blockquote class="founder">
+        “At AXT Labs, we believe the future belongs to builders who honor the scientific method and design with empathy. Our mission is simple: make advanced research feel accessible—and irresistible.”
+        <cite>— Cody Terry, Founder</cite>
+      </blockquote>
+    </section>
+
     <section class="about">
       <h2>About</h2>
       <p>Founded by Cody Terry, Southern California<br/>Independent Research & Technology</p>
     </section>
-    
+
     <footer class="footer">
       <p>Stay tuned for the future of advanced research.</p>
     </footer>
   </div>
-  
+
   <script>
-    // Set current year safely
+    // Countdown to January 1, 2026
     document.addEventListener('DOMContentLoaded', function() {
-      // Calculate days until January 1, 2026
       const launchDate = new Date('2026-01-01');
       const today = new Date();
       const timeDiff = launchDate - today;
       const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
-      
+
       const countdownText = document.querySelector('.countdown-text');
-      if (daysLeft > 0) {
-        countdownText.textContent = `${daysLeft} days to go, prepping the future`;
-      } else {
-        countdownText.textContent = 'Launched! The future is here.';
+      if (countdownText) {
+        if (daysLeft > 0) {
+          countdownText.textContent = `${daysLeft} days to go, prepping the future`;
+        } else {
+          countdownText.textContent = 'Launched! The future is here.';
+        }
       }
     });
   </script>
