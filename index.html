@@ -1,41 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AXT Labs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 40px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .welcome {
-            text-align: center;
-            color: #666;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AXT Labs | AI Orchestration + DevOps Agents</title>
+  <meta name="description" content="AXT Labs: AI orchestration, ZOE workflow, and DevOps agent automation. Compliance-ready, parallel builds, and patent/IP sync." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0b0c0f;
+      --panel: #11131a;
+      --text: #e6e8ee;
+      --muted: #a5adbd;
+      --brand: #7aa2ff; /* AXT neutral blue */
+      --accent: #60e0b2; /* ZOE mint */
+      --border: #1e2230;
+      --shadow: 0 6px 30px rgba(0,0,0,.25);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f8fb;
+        --panel: #ffffff;
+        --text: #0d1117;
+        --muted: #54607a;
+        --brand: #3b6cff;
+        --accent: #18c79a;
+        --border: #e6e8ef;
+        --shadow: 0 10px 30px rgba(16,24,40,.08);
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(96,224,178,.08), transparent),
+                  radial-gradient(900px 500px at -10% 10%, rgba(122,162,255,.08), transparent),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px 20px 64px; }
+
+    /* Header */
+    .header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 0 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .logo { width: 36px; height: 36px; border-radius: 8px; background: linear-gradient(135deg, var(--brand), var(--accent)); box-shadow: var(--shadow); position: relative; overflow: hidden; }
+    .logo:before { content: ""; position: absolute; inset: 0; background: conic-gradient(from 200deg, rgba(255,255,255,.25), transparent 40%); mix-blend-mode: overlay; }
+    .brand h1 { font-size: 18px; margin: 0; letter-spacing: .4px; font-weight: 700; }
+    .brand .sub { font-size: 12px; color: var(--muted); margin-top: -2px; }
+
+    .nav { display: flex; gap: 14px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border); color: var(--text); background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(0,0,0,.04)); box-shadow: var(--shadow); }
+    .btn:hover { transform: translateY(-1px); }
+    .btn.primary { background: linear-gradient(135deg, var(--brand), var(--accent)); color: #0b0c0f; font-weight: 600; border: none; }
+
+    /* Hero */
+    .hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: center; padding: 18px 0 8px; }
+    .hero h2 { font-size: clamp(28px, 3.5vw, 44px); line-height: 1.15; margin: 0 0 10px; }
+    .hero p { color: var(--muted); margin: 0 0 16px; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); font-size: 12px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 18px; box-shadow: var(--shadow); }
+
+    /* Grid sections */
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(3, 1fr); margin-top: 18px; }
+    .tile { border: 1px solid var(--border); border-radius: 12px; padding: 16px; background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(0,0,0,.03)); }
+    .tile h3 { margin: 0 0 6px; font-size: 16px; }
+    .tile p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    /* Metrics */
+    .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 10px; }
+    .kpi { padding: 14px; border-radius: 12px; border: 1px solid var(--border); background: var(--panel); text-align: center; }
+    .kpi .v { font-size: 20px; font-weight: 700; }
+    .kpi .l { color: var(--muted); font-size: 12px; }
+
+    /* Demos */
+    .demos { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); margin-top: 14px; }
+    .demo { padding: 14px; border: 1px dashed var(--border); border-radius: 12px; background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.02)); }
+    .demo h4 { margin: 0 0 6px; }
+    .demo p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    /* Footer */
+    footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      .metrics { grid-template-columns: 1fr 1fr; }
+      .demos { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>AXT Labs</h1>
-        <p class="welcome">Welcome to AXT Labs - Innovation in Technology</p>
-        <p>This site is under construction. More content coming soon.</p>
-    </div>
+  <div class="wrap">
+    <header class="header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>AXT Labs</h1>
+          <div class="sub">AI Orchestration for Software & Operations</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a class="btn" href="#demos">Demos</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn primary" href="https://github.com/codyterry24-dev/axtlabs.github.io" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <span class="badge">Neutral AXT/ZOE branding • Dark/Light mode ready</span>
+        <h2>Coordinate AI agents, workflows, and DevOps automation — safely and at scale.</h2>
+        <p>AXT Labs builds orchestration for multi-agent systems. ZOE powers compliant workflows from code to cloud, while DevOps Agents automate CI/CD and infrastructure tasks.</p>
+        <div class="grid">
+          <div class="tile">
+            <h3>AI Orchestration</h3>
+            <p>Policy-aware routing, tool access control, and human-in-the-loop checkpoints for production-grade AI.</p>
+          </div>
+          <div class="tile">
+            <h3>ZOE Workflow</h3>
+            <p>Composable pipelines for research, delivery, and operations with traceability and audit logs.</p>
+          </div>
+          <div class="tile">
+            <h3>DevOps Agent Automation</h3>
+            <p>Agents that manage builds, tests, deployments, and rollbacks across clouds and repos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <strong>Quick Start</strong>
+        <ol>
+          <li>Connect your repo and CI.</li>
+          <li>Enable ZOE policy packs.</li>
+          <li>Launch DevOps agents for targeted workflows.</li>
+        </ol>
+        <small style="color:var(--muted)">No sensitive data required for this demo page.</small>
+      </div>
+    </section>
+
+    <section aria-label="Key achievements" class="card" style="margin-top:18px;">
+      <strong>Key achievements & metrics</strong>
+      <div class="metrics">
+        <div class="kpi"><div class="v">Compliance-first</div><div class="l">Policy packs + audit logs</div></div>
+        <div class="kpi"><div class="v">xN parallel</div><div class="l">Parallel builds & test shards</div></div>
+        <div class="kpi"><div class="v">IP sync</div><div class="l">Patent/knowledge base alignment</div></div>
+      </div>
+    </section>
+
+    <section id="demos" class="grid" style="margin-top:18px;">
+      <div class="demo">
+        <h4>ZOE Research-to-Release</h4>
+        <p>End-to-end workflow demo: PR triage, policy checks, artifact signing, staged deploy, and post-release learning loop.</p>
+      </div>
+      <div class="demo">
+        <h4>DevOps Agent Kit</h4>
+        <p>Agents executing matrix builds, vulnerability scans, and blue/green rollouts with observability hooks.</p>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div>© <span id="y"></span> AXT Labs</div>
+      <div style="display:flex; gap:10px; align-items:center;">
+        <a href="mailto:contact@axtlabs.dev" class="btn" aria-label="Email AXT Labs">Email</a>
+        <a href="https://github.com/codyterry24-dev" target="_blank" rel="noopener" class="btn" aria-label="AXT Labs GitHub">GitHub Org</a>
+        <a href="https://github.com/codyterry24-dev/axtlabs.github.io" target="_blank" rel="noopener" class="btn" aria-label="This site repository">Repo</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year safely
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
