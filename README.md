@@ -1,127 +1,86 @@
 # AXT Labs
 
-> **Empowering Innovation Through Advanced Technology**
+> **Physics-Anchored Intelligence for the 2030s**
 
-🚀 **[Visit Live Site →](https://axtlabs.github.io)**
+🚀 **[Visit Live Site →](https://codyterry24-dev.github.io/axtlabs.github.io/)**
 
 ---
 
 ## 🌟 Overview
 
-AXT Labs is a cutting-edge technology initiative dedicated to pushing the boundaries of innovation. Our launch site serves as the gateway to a transformative digital experience, showcasing our commitment to excellence in technology development and deployment.
+AXT Labs is a next-generation research and engineering studio turning Nobel-aligned physics into production-grade AI systems. We build physics-anchored computing infrastructure for high-stakes domains: finance, cybersecurity, biotech, and digital twins.
+
+Our core engine, **ZT-Core**, treats complex systems as energy landscapes with machine-checkable invariants—delivering validation at <1ms latency with 0% invariant violations.
 
 ---
 
 ## 💡 Mission Statement & Value Proposition
 
-**Mission:** To revolutionize the technology landscape by delivering innovative solutions that empower businesses and individuals to achieve unprecedented growth and efficiency.
+**Mission:** To transform Nobel-aligned physics into a production substrate for AI systems in risk, cybersecurity, biotech, and digital twins.
 
-**Value Proposition:** We combine deep technical expertise with visionary thinking to create scalable, robust, and future-proof technology solutions. AXT Labs bridges the gap between cutting-edge research and practical implementation, delivering tangible value through:
+**Value Proposition:** We architect a new computational paradigm where physics and invariants are first-class citizens. Same hardware, different ceiling.
 
-- **Innovation-First Approach:** Pioneering technologies that set industry standards
-- **User-Centric Design:** Solutions built with the end-user experience at the forefront
-- **Scalable Architecture:** Systems designed to grow with your needs
-- **Security & Reliability:** Enterprise-grade protection and uptime guarantees
+**Key Differentiators:**
+- **0% Invariant Violations** vs 12% for LLM+GPU baselines
+- **100% Feasible Solutions** vs 88% baseline
+- **<1ms Validation Latency** at <5% CPU overhead
+- **1.000 Memory Correlation** for perfect validation
 
 ---
 
-## 🏛️ Core Pillars
+## 🏛️ Two Entities, One Mission
 
-Our foundation rests on four fundamental pillars that drive everything we do:
+### AMEL Foundation
+The humanitarian arm focused on applying advanced computation to public-good problems in health, energy, education, and governance.
 
-### 1. **Innovation & Research**
-   - Continuous exploration of emerging technologies
-   - R&D investment in AI, machine learning, and next-gen platforms
-   - Strategic partnerships with leading academic institutions
+### AXT Labs
+The for-profit studio that operationalizes research into deployable platforms, SDKs, and enterprise solutions. A share of AXT Labs' upside flows back into AMEL to fund open science and humanitarian deployments.
 
-### 2. **Excellence in Execution**
-   - Agile development methodologies
-   - Rigorous testing and quality assurance
-   - Continuous integration and deployment pipelines
+---
 
-### 3. **Community & Collaboration**
-   - Open-source contributions
-   - Knowledge sharing and technical thought leadership
-   - Building ecosystems that foster innovation
+## ⚡ Core Products
 
-### 4. **Sustainable Growth**
-   - Environmentally conscious technology practices
-   - Long-term value creation over short-term gains
-   - Ethical AI and responsible innovation
+### ZT-Core Risk Engine
+Physics-anchored optimization and validation for portfolios, infrastructure configs, and digital twins. Encodes domain rules as machine-checkable invariants.
+
+### BIOxPOD & FORCE Protocol
+Deterministic RNA 3D folding and treatment design with full mathematical transparency. Built for labs and regulators that can't accept black-box heuristics.
+
+### AXT-APEX & Digital Twins
+Predator-logic cybersecurity, zero-trust proofs, and Aperion-grade digital twins for energy, industrial systems, and grid operations.
 
 ---
 
 ## 🎯 Live Site
 
-**Experience AXT Labs:** [https://axtlabs.github.io](https://axtlabs.github.io)
+**Experience AXT Labs:** [https://codyterry24-dev.github.io/axtlabs.github.io/](https://codyterry24-dev.github.io/axtlabs.github.io/)
 
 Our launch site features:
-- Interactive UI with modern design principles
-- Comprehensive product showcases
-- Real-time demonstrations of our capabilities
-- Resource hub for developers and partners
+- Live countdown to 2026 launch
+- ZT-Core engine visualization
+- "One Engine, Four Worlds" showcase
+- AMEL → AXT Labs timeline
+- Investor and design partner information
 
 ---
 
-## ✨ Latest Launch Enhancements & Features
+## 📅 Timeline
 
-### Recent Updates (Q4 2025)
-
-#### **🎨 Enhanced User Experience**
-- Reimagined interface with responsive design across all devices
-- Dark/light mode toggle for optimal viewing comfort
-- Accessibility improvements meeting WCAG 2.1 AA standards
-- Reduced load times with optimized asset delivery
-
-#### **🔧 Technical Improvements**
-- Migration to modern web stack with improved performance
-- Progressive Web App (PWA) capabilities
-- Advanced analytics and user insights dashboard
-- CDN integration for global content delivery
-
-#### **📱 New Features**
-- Interactive product demos and sandboxes
-- Real-time collaboration tools
-- API documentation with live examples
-- Developer console and testing environment
-
-#### **🔒 Security & Infrastructure**
-- End-to-end encryption for all communications
-- ISO 27001 compliant infrastructure
-- Regular security audits and penetration testing
-- 99.99% uptime SLA
+| Year | Milestone |
+|------|------------|
+| 2023-2024 | AMEL Foundation established with departmental lattice |
+| 2024-2025 | ZT-Core, BIOxPOD, APEX, Aperion prototypes; 14 Kaggle validations |
+| 2025 | Physics-Anchored Computing whitepaper; Nobel alignment |
+| 2026 | Enterprise pilots; ZT-Core Enterprise Beta; BIOxPOD v1 |
 
 ---
 
-## 📬 Join the Waitlist & Contact
+## 📬 Contact
 
-### Get Early Access
+For design-partner opportunities, grants, and investor conversations:
 
-Be among the first to experience our revolutionary platform:
-
-1. **Waitlist Registration:** [Sign up here](https://axtlabs.github.io) to secure your spot
-2. **Beta Program:** Selected participants get exclusive early access and direct input into product development
-3. **Priority Notifications:** Receive updates about new features, launches, and exclusive opportunities
-
-### Contact Us
-
-**General Inquiries:**
-- 📧 Email: contact@axtlabs.io
-- 💬 Chat: Available on [our website](https://axtlabs.github.io)
-
-**Business & Partnerships:**
-- 📧 Email: partnerships@axtlabs.io
-- 🤝 Schedule a meeting: [Book a consultation](https://axtlabs.github.io)
-
-**Developer Support:**
-- 📧 Email: dev@axtlabs.io
-- 💻 GitHub: [@axtlabs](https://github.com/axtlabs)
-- 📚 Documentation: [docs.axtlabs.io](https://axtlabs.github.io)
-
-**Community & Social:**
-- 🐦 Twitter: [@AXTLabs](https://twitter.com/axtlabs)
-- 💼 LinkedIn: [AXT Labs](https://linkedin.com/company/axtlabs)
-- 📱 Discord: [Join our community](https://axtlabs.github.io)
+- 📧 **Email:** [axtlabs@protonmail.com](mailto:axtlabs@protonmail.com)
+- 📍 **Location:** Los Angeles, CA (remote-first lab)
 
 ---
 
@@ -142,14 +101,10 @@ open index.html
 
 ## 📄 License
 
-Copyright © 2025 AXT Labs. All rights reserved.
+Copyright © 2025 AXT Labs · AMEL Foundation. All rights reserved.
 
 ---
 
-<div align="center">
+**Physics-anchored, invariant-driven systems for the 2030s.**
 
-**Built with ❤️ by the AXT Labs Team**
-
-[Website](https://axtlabs.github.io) • [Documentation](https://axtlabs.github.io) • [GitHub](https://github.com/axtlabs) • [Contact](mailto:contact@axtlabs.io)
-
-</div>
+[Website](https://codyterry24-dev.github.io/axtlabs.github.io/) • [Contact](mailto:axtlabs@protonmail.com)
