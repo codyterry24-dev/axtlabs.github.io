@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AXT Labs | Redefining Scientific Discovery for 2030</title>
-    <meta name="description" content="AXT Labs launches 2030. Next-generation research platform accelerating scientific breakthroughs with human-centered AI."/>
+    <title>AXT Labs | Physics-Anchored Intelligence</title>
+    <meta name="description" content="AXT Labs is a next-generation research and engineering studio turning Nobel-aligned physics into production-grade AI systems."/>
     <meta name="theme-color" content="#0A0A0A" />
-    <meta property="og:title" content="AXT Labs | 2030" />
-    <meta property="og:description" content="Redefining scientific discovery with next-generation research tools." />
+    <meta property="og:title" content="AXT Labs | 2026" />
+    <meta property="og:description" content="Physics-anchored AI for finance, cybersecurity, biotech, and digital twins." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
         :root {
             --color-bg-primary: #0A0A0A;
             --color-bg-secondary: #1C1C1E;
@@ -24,7 +23,6 @@
             --color-text-secondary: rgba(255,255,255,0.7);
             --color-glass-bg: rgba(28, 28, 30, 0.7);
         }
-        
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
             background: var(--color-bg-primary);
@@ -32,15 +30,11 @@
             overflow-x: hidden;
             line-height: 1.6;
         }
-        
-        /* Animated gradient background */
         body::before {
             content: '';
             position: fixed;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
             background: 
                 radial-gradient(circle at 20% 30%, rgba(94, 92, 230, 0.15) 0%, transparent 50%),
                 radial-gradient(circle at 80% 70%, rgba(10, 132, 255, 0.15) 0%, transparent 50%),
@@ -49,327 +43,69 @@
             z-index: 0;
             pointer-events: none;
         }
-        
         @keyframes gradientShift {
             0%, 100% { transform: translate(0, 0) rotate(0deg); }
             33% { transform: translate(5%, -5%) rotate(120deg); }
             66% { transform: translate(-5%, 5%) rotate(240deg); }
         }
-        
-        /* Glass morphism utility class */
         .glass {
             background: var(--color-glass-bg);
             backdrop-filter: blur(40px) saturate(180%);
             -webkit-backdrop-filter: blur(40px) saturate(180%);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 
-                0 8px 32px rgba(0, 0, 0, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
-        
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 32px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        /* Header Navigation */
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-        
-        header.scrolled {
-            background: rgba(10, 10, 10, 0.8);
-            backdrop-filter: blur(20px);
-            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
-        }
-        
-        nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 32px;
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            background: linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 32px;
-            list-style: none;
-        }
-        
-        .nav-links a {
-            color: var(--color-text-secondary);
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-        
-        .nav-links a:hover {
-            color: var(--color-text-primary);
-        }
-        
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            padding: 120px 32px 80px;
-        }
-        
-        .hero-content {
-            max-width: 900px;
-            animation: fadeInUp 1s ease forwards;
-            opacity: 0;
-        }
-        
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-            from {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-        }
-        
-        .hero-badge {
-            display: inline-block;
-            padding: 8px 16px;
-            border-radius: 24px;
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 32px;
-            animation-delay: 0.2s;
-        }
-        
-        h1 {
-            font-size: clamp(48px, 8vw, 96px);
-            font-weight: 800;
-            letter-spacing: -2px;
-            line-height: 1.1;
-            margin-bottom: 24px;
-            background: linear-gradient(135deg, #FFFFFF 0%, rgba(255,255,255,0.8) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .gradient-text {
-            background: linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-purple), var(--color-accent-blue));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .hero-description {
-            font-size: clamp(18px, 2vw, 24px);
-            color: var(--color-text-secondary);
-            margin-bottom: 48px;
-            line-height: 1.6;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .cta-group {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
-            padding: 16px 32px;
-            border-radius: 12px;
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-cyan));
-            color: #FFFFFF;
-            box-shadow: 0 8px 24px rgba(10, 132, 255, 0.3);
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 32px rgba(10, 132, 255, 0.4);
-        }
-        
-        .btn-secondary {
-            color: var(--color-text-primary);
-        }
-        
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.05);
-        }
-        
-        /* Features Grid */
-        .features {
-            padding: 120px 32px;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: clamp(36px, 5vw, 56px);
-            font-weight: 700;
-            letter-spacing: -1px;
-            margin-bottom: 64px;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 32px;
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-        
-        .feature-card {
-            padding: 40px;
-            border-radius: 24px;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(10, 132, 255, 0.1), transparent);
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-        
-        .feature-card:hover::before {
-            opacity: 1;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-8px);
-        }
-        
-        .feature-icon {
-            font-size: 48px;
-            margin-bottom: 24px;
-            display: block;
-        }
-        
-        .feature-title {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-        
-        .feature-description {
-            color: var(--color-text-secondary);
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        
-        /* Stats Section */
-        .stats {
-            padding: 80px 32px;
-            text-align: center;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 48px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .stat-number {
-            font-size: clamp(48px, 6vw, 72px);
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            display: block;
-            margin-bottom: 8px;
-        }
-        
-        .stat-label {
-            color: var(--color-text-secondary);
-            font-size: 16px;
-        }
-        
-        /* Footer */
-        footer {
-            padding: 64px 32px;
-            text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .footer-links {
-            display: flex;
-            gap: 32px;
-            justify-content: center;
-            list-style: none;
-            margin-bottom: 24px;
-        }
-        
-        .footer-links a {
-            color: var(--color-text-secondary);
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.2s ease;
-        }
-        
-        .footer-links a:hover {
-            color: var(--color-text-primary);
-        }
-        
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .cta-group { flex-direction: column; }
-            .features-grid { grid-template-columns: 1fr; }
-        }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; position: relative; z-index: 1; }
+        header { position: fixed; top: 0; width: 100%; z-index: 1000; transition: all 0.3s ease; }
+        header.scrolled { background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(20px); box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05); }
+        nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 32px; max-width: 1280px; margin: 0 auto; }
+        .logo { font-size: 24px; font-weight: 700; letter-spacing: -0.5px; background: linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .nav-links { display: flex; gap: 32px; list-style: none; }
+        .nav-links a { color: var(--color-text-secondary); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s ease; }
+        .nav-links a:hover { color: var(--color-text-primary); }
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; padding: 120px 32px 80px; }
+        .hero-content { max-width: 900px; animation: fadeInUp 1s ease forwards; opacity: 0; }
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } from { opacity: 0; transform: translateY(40px); } }
+        .hero-badge { display: inline-block; padding: 8px 16px; border-radius: 24px; font-size: 13px; font-weight: 600; margin-bottom: 32px; }
+        h1 { font-size: clamp(48px, 8vw, 80px); font-weight: 800; letter-spacing: -2px; line-height: 1.1; margin-bottom: 24px; background: linear-gradient(135deg, #FFFFFF 0%, rgba(255,255,255,0.8) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .gradient-text { background: linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-purple), var(--color-accent-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hero-description { font-size: clamp(16px, 2vw, 20px); color: var(--color-text-secondary); margin-bottom: 48px; line-height: 1.7; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .cta-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 16px 32px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; cursor: pointer; border: none; display: inline-flex; align-items: center; gap: 8px; }
+        .btn-primary { background: linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-cyan)); color: #FFFFFF; box-shadow: 0 8px 24px rgba(10, 132, 255, 0.3); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(10, 132, 255, 0.4); }
+        .btn-secondary { color: var(--color-text-primary); }
+        .btn-secondary:hover { background: rgba(255, 255, 255, 0.05); }
+        .section { padding: 100px 32px; }
+        .section-title { text-align: center; font-size: clamp(32px, 5vw, 48px); font-weight: 700; letter-spacing: -1px; margin-bottom: 24px; }
+        .section-subtitle { text-align: center; color: var(--color-text-secondary); font-size: 18px; max-width: 700px; margin: 0 auto 64px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; max-width: 1280px; margin: 0 auto; }
+        .feature-card { padding: 40px; border-radius: 24px; transition: all 0.4s ease; position: relative; overflow: hidden; }
+        .feature-card:hover { transform: translateY(-8px); }
+        .feature-icon { font-size: 48px; margin-bottom: 24px; display: block; }
+        .feature-title { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+        .feature-description { color: var(--color-text-secondary); font-size: 15px; line-height: 1.7; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; max-width: 1100px; margin: 0 auto; align-items: center; }
+        .two-col-text h3 { font-size: 28px; font-weight: 700; margin-bottom: 16px; }
+        .two-col-text p { color: var(--color-text-secondary); line-height: 1.7; }
+        .bullet-list { list-style: none; margin-top: 32px; }
+        .bullet-list li { padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--color-text-secondary); }
+        .bullet-list li strong { color: var(--color-text-primary); }
+        footer { padding: 64px 32px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+        .footer-contact { max-width: 500px; margin: 0 auto; }
+        .footer-contact h4 { font-size: 20px; margin-bottom: 16px; }
+        .footer-contact p { color: var(--color-text-secondary); font-size: 14px; margin-bottom: 8px; }
+        .footer-contact a { color: var(--color-accent-cyan); text-decoration: none; }
+        .footer-contact a:hover { text-decoration: underline; }
+        @media (max-width: 768px) { .nav-links { display: none; } .cta-group { flex-direction: column; } .features-grid { grid-template-columns: 1fr; } .two-col { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
     <header id="header">
         <nav>
-            <div class="logo"><img src="axt-logo.png" alt="AXT LABS" style="height: 40px; width: auto;"></div>
+            <div class="logo">AXT LABS</div>
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
+                <li><a href="#platform">Platform</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="https://github.com/codyterry24-dev">GitHub</a></li>
             </ul>
@@ -379,117 +115,71 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <div class="hero-badge glass">LAUNCHING 2030</div>
-                <h1>
-                    The Future of<br/>
-                    <span class="gradient-text">Scientific Discovery</span>
-                </h1>
+                <div class="hero-badge glass">LAUNCHING 2026 · <span id="launch-countdown"></span></div>
+                <h1>The Future of<br/><span class="gradient-text">Physics-Anchored Intelligence</span></h1>
                 <p class="hero-description">
-                    Next-generation research platform engineered to accelerate breakthrough discoveries.
-                    Where human intuition meets computational power.
+                    AXT Labs is a next-generation research and engineering studio turning Nobel-aligned physics into production-grade AI systems for finance, cybersecurity, biotech, and digital twins.
                 </p>
                 <div class="cta-group">
-                    <a href="#features" class="btn btn-primary">Explore Platform</a>
-                    <a href="#about" class="btn btn-secondary glass">Learn More</a>
+                    <a href="#platform" class="btn btn-primary">Explore Platform</a>
+                    <a href="#investor" class="btn btn-secondary glass">View Investor Brief</a>
                 </div>
             </div>
         </section>
 
-        <section id="features" class="features">
+        <section id="platform" class="section">
             <div class="container">
-                <h2 class="section-title">Engineered for <span class="gradient-text">Excellence</span></h2>
+                <h2 class="section-title">One Engine, <span class="gradient-text">Many Industries</span></h2>
+                <p class="section-subtitle">We build a single physics-anchored substrate that powers high-stakes decision systems across multiple verticals. ZT-Core, our invariant-driven optimization engine, is already validating risk, security, and biologic models on commodity hardware.</p>
                 <div class="features-grid">
                     <div class="feature-card glass">
                         <span class="feature-icon">⚡</span>
-                        <h3 class="feature-title">Quantum-Speed Analysis</h3>
-                        <p class="feature-description">
-                            Process complex datasets in milliseconds. Real-time insights that keep pace with discovery.
-                        </p>
+                        <h3 class="feature-title">ZT-Core Risk Engine</h3>
+                        <p class="feature-description">Physics-anchored optimization and validation for portfolios, infrastructure configs, and digital twins. Encodes domain rules as machine-checkable invariants and tracks energy trajectories over time.</p>
                     </div>
                     <div class="feature-card glass">
                         <span class="feature-icon">🧬</span>
-                        <h3 class="feature-title">Intelligent Automation</h3>
-                        <p class="feature-description">
-                            AI-powered workflows that learn from your research patterns, eliminating repetitive tasks.
-                        </p>
-                    </div>
-                    <div class="feature-card glass">
-                        <span class="feature-icon">🔬</span>
-                        <h3 class="feature-title">Precision Tools</h3>
-                        <p class="feature-description">
-                            Purpose-built instruments for rigorous research. Zero compromise on accuracy or reproducibility.
-                        </p>
-                    </div>
-                    <div class="feature-card glass">
-                        <span class="feature-icon">🌐</span>
-                        <h3 class="feature-title">Collaborative Ecosystem</h3>
-                        <p class="feature-description">
-                            Seamless collaboration tools connecting researchers worldwide in real-time.
-                        </p>
+                        <h3 class="feature-title">BIOxPOD & FORCE Protocol</h3>
+                        <p class="feature-description">Deterministic RNA 3D folding and treatment design with full mathematical transparency. Designed for labs and regulators that can't accept black-box heuristics.</p>
                     </div>
                     <div class="feature-card glass">
                         <span class="feature-icon">🔐</span>
-                        <h3 class="feature-title">Enterprise Security</h3>
-                        <p class="feature-description">
-                            Military-grade encryption protecting your most valuable research assets and intellectual property.
-                        </p>
+                        <h3 class="feature-title">AXT-APEX & Digital Twins</h3>
+                        <p class="feature-description">Predator-logic cybersecurity, zero-trust proofs, and Aperion-grade digital twins for energy, industrial systems, and grid operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="two-col">
+                    <div class="two-col-text">
+                        <h3>AMEL Foundation <span class="gradient-text">×</span> AXT Labs</h3>
+                        <p>AMEL Foundation is the humanitarian arm, focused on applying advanced computation to public-good problems in health, energy, education, and governance.</p>
+                        <p style="margin-top: 16px;">AXT Labs is the for-profit studio that operationalizes this research into deployable platforms, SDKs, and enterprise solutions. A share of AXT Labs' upside flows back into AMEL to fund open science and humanitarian deployments.</p>
                     </div>
                     <div class="feature-card glass">
-                        <span class="feature-icon">📊</span>
-                        <h3 class="feature-title">Visual Intelligence</h3>
-                        <p class="feature-description">
-                            Transform data into insights with stunning, interactive visualizations that reveal hidden patterns.
-                        </p>
+                        <h3 class="feature-title">From Thought Experiment to Running System</h3>
+                        <ul class="bullet-list">
+                            <li><strong>Three-year R&D foundation</strong> – 15+ months of physics-anchored computing research (ZT-Core) preceding the 2025 Nobel Prize in macroscopic quantum phenomena.</li>
+                            <li><strong>Multi-domain validation</strong> – 29+ repositories, 14 Kaggle competitions, and 50+ projects spanning risk, cyber, biotech, sports, and digital twins.</li>
+                            <li><strong>Enterprise-ready discipline</strong> – CI/CD, stress tests, invariant logs, and sprint governance that already look like a public-company stack.</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="stats">
-            <div class="container">
-                <div class="stats-grid">
-                    <div>
-                        <span class="stat-number">10x</span>
-                        <span class="stat-label">Faster Analysis</span>
-                    </div>
-                    <div>
-                        <span class="stat-number">99.9%</span>
-                        <span class="stat-label">Uptime Guarantee</span>
-                    </div>
-                    <div>
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Research Teams</span>
-                    </div>
-                    <div>
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Expert Support</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="features">
-            <div class="container" style="max-width: 800px; text-align: center;">
-                <h2 class="section-title">Built for Tomorrow's <span class="gradient-text">Breakthroughs</span></h2>
-                <p class="hero-description">
-                    AXT LABS is redefining what's possible in scientific research. Our platform combines cutting-edge AI,
-                    quantum-inspired algorithms, and intuitive design to accelerate the pace of discovery. From genomics
-                    to materials science, we're empowering researchers to push the boundaries of human knowledge.
-                </p>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <ul class="footer-links">
-                <li><a href="https://github.com/codyterry24-dev">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/codyterry24">LinkedIn</a></li>
-                <li><a href="mailto:contact@axtlabs.io">Contact</a></li>
-            </ul>
-            <p style="color: var(--color-text-secondary); font-size: 14px;">
-                &copy; 2030 AXT LABS. Engineering the next wave of scientific discovery.
-            </p>
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>For design-partner opportunities, grants, and investor conversations:</p>
+            <p>Email: <a href="mailto:axtlabs@protonmail.com">axtlabs@protonmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/codyterry24-dev">github.com/codyterry24-dev</a></p>
+            <p>Location: Los Angeles, CA (remote-first lab)</p>
+            <p style="margin-top: 24px; color: rgba(255,255,255,0.5);">© 2026 AXT Labs. Physics-anchored intelligence.</p>
         </div>
     </footer>
 
@@ -515,12 +205,30 @@
             });
         });
 
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+        // Countdown to January 1, 2026
+        (function () {
+            const target = new Date("2026-01-01T00:00:00Z").getTime();
+            const el = document.getElementById("launch-countdown");
+            if (!el) return;
 
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const diff = target - now;
+                if (diff <= 0) {
+                    el.textContent = "Live";
+                    return;
+                }
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                el.textContent = days + "d " + hours + "h";
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 60 * 1000);
+        })();
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -530,11 +238,10 @@
             });
         }, observerOptions);
 
-        // Observe feature cards
         document.querySelectorAll('.feature-card').forEach((card, index) => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
-            card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+            card.style.transition = 'all 0.6s ease ' + (index * 0.1) + 's';
             observer.observe(card);
         });
     </script>
